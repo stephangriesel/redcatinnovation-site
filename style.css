@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.wrapper .hero {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
