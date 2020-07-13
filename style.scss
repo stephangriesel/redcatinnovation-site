@@ -1,11 +1,60 @@
-body {
+body,
+html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
   display: grid;
-  .hero {
-    height: 100vh;
+  place-items: center;
+  height: 70vh;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .desc-left {
+    background: #000;
+    color: #fff;
+    flex-direction: column;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .desc-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .item {
+    flex: 0 540px;
   }
 }

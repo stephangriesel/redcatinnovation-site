@@ -1,14 +1,95 @@
-body {
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  display: -ms-grid;
-  display: grid;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.wrapper .hero {
+.hero {
   height: 100vh;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.logo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 70vh;
+}
+
+.desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.desc p {
+  margin: 0;
+  padding: 0;
+}
+
+.desc .desc-left {
+  background: #000;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desc .desc-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.desc .desc-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid .item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 540px;
+          flex: 0 540px;
 }
 /*# sourceMappingURL=style.css.map */
