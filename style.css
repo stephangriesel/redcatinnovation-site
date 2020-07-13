@@ -6,6 +6,10 @@ html {
   padding: 0;
 }
 
+.hero {
+  margin: 20px;
+}
+
 .wrapper {
   max-width: 1080px;
   width: 100%;
@@ -39,6 +43,8 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .desc p {
@@ -77,6 +83,7 @@ html {
 }
 
 .grid {
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +96,19 @@ html {
 
 .grid .item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 540px;
-          flex: 0 540px;
+      -ms-flex: 0 500px;
+          flex: 0 500px;
+}
+
+@media only screen and (max-width: 510px) {
+  .hero {
+    height: auto;
+  }
+  .contact-box {
+    display: none;
+  }
+  .desc-right > p {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

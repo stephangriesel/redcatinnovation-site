@@ -5,6 +5,10 @@ html {
   padding: 0;
 }
 
+.hero {
+  margin: 20px;
+}
+
 .wrapper {
   max-width: 1080px;
   width: 100%;
@@ -29,6 +33,7 @@ html {
 .desc {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   p {
     margin: 0;
     padding: 0;
@@ -51,10 +56,24 @@ html {
 }
 
 .grid {
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   .item {
-    flex: 0 540px;
+    flex: 0 500px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .hero {
+    height: auto;
+  }
+  .contact-box {
+    display: none;
+  }
+
+  .desc-right > p {
+    display: none;
   }
 }
