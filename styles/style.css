@@ -1,17 +1,36 @@
+@font-face {
+  font-family: 'Molde-Condensed-Medium';
+  src: url("../fonts/Molde-Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Molde-Condensed-LightItalic';
+  src: url("../fonts/Molde-Condensed-LightItalic.ttf");
+}
+
 body,
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Molde-Condensed-Medium';
+}
+
+a {
+  color: #000;
 }
 
 .hero {
   margin: 20px;
 }
 
+.hero .logo img {
+  width: 22em;
+}
+
 .wrapper {
-  max-width: 1080px;
+  max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
@@ -27,6 +46,11 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.top p {
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -53,17 +77,20 @@ html {
 }
 
 .desc .desc-left {
-  background: #000;
-  color: #fff;
+  color: #000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 .desc .desc-left p {
   margin: 0;
   padding: 0;
+  line-height: 1em;
+  letter-spacing: 0.1em;
 }
 
 .desc .desc-right {
@@ -82,8 +109,14 @@ html {
           justify-content: flex-end;
 }
 
+.desc .desc-right p {
+  line-height: 1em;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
 .grid {
-  margin: 20px;
+  margin: 7em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,8 +129,21 @@ html {
 
 .grid .item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 500px;
-          flex: 0 500px;
+      -ms-flex: 0 750px;
+          flex: 0 750px;
+}
+
+.grid .item .black-bg {
+  background: #000;
+  margin: 0 5em 2em 0;
+  padding: 1em 0.2em;
+  color: #fff;
+  font-size: 2em;
+}
+
+.grid .item .about-block {
+  font-family: 'Molde-Condensed-LightItalic';
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 510px) {
