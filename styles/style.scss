@@ -29,7 +29,7 @@ a {
 .hero {
   background: #dddddd;
   margin: 0;
-  padding: 1em;
+  padding: 1em 1em 3em;
   .logo {
     img {
       width: 22em;
@@ -119,7 +119,7 @@ a {
     .black-bg-2 {
       text-align: center;
       background: #000;
-      margin: 2em 5em;
+      margin: 2em 3em;
       padding: 0.5em 1em;
       color: #fff;
       font-size: 2em;
@@ -171,7 +171,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1180px) {
   .hero {
     height: auto;
   }
