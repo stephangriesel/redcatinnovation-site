@@ -13,6 +13,7 @@
 
 body,
 html {
+  background: #ad2126;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -40,13 +41,13 @@ a {
   // max-width: 1580px; // remove for boxed layout
   width: 100%;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25);
+  // -webkit-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25); // will show if box layout used
+  // -moz-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25); // will show if box layout used
+  // box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25); // will show if box layout used
 }
 
 .hero {
-  height: 100vh;
+  // height: 100vh;
 }
 
 .top {
@@ -73,10 +74,8 @@ a {
     padding: 0;
   }
   .desc-left {
-    // background: #000;
     color: #000;
     flex-direction: column;
-    // padding: 0.8em;
     text-transform: uppercase;
     font-size: 2em;
     p {
@@ -100,20 +99,15 @@ a {
 }
 
 .grid {
-  --auto-grid-min-size: 48rem;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size), 1fr)
-  );
-  // grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   // margin: 0 20px; // remove for boxed layout
   // display: flex; // remove for boxed layout
   // flex-wrap: wrap; // remove for boxed layout
   // justify-content: center; // remove for boxed layout
   background: #ad2126;
   .item {
-    flex: 0 750px;
+    // flex: 0 500px;
     .black-bg {
       background: #000;
       margin: 2em 5em 2em 0;
@@ -177,13 +171,9 @@ footer {
   }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 1000px) {
   .hero {
     height: auto;
-  }
-
-  .grid {
-    --auto-grid-min-size: 20rem;
   }
 
   .contact-box {

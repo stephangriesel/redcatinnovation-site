@@ -15,6 +15,7 @@
 
 body,
 html {
+  background: #ad2126;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -41,12 +42,6 @@ a {
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25);
-}
-
-.hero {
-  height: 100vh;
 }
 
 .top {
@@ -126,18 +121,11 @@ a {
 }
 
 .grid {
-  --auto-grid-min-size: 48rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(var(--auto-grid-min-size), 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background: #ad2126;
-}
-
-.grid .item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 750px;
-          flex: 0 750px;
 }
 
 .grid .item .black-bg {
@@ -215,12 +203,9 @@ footer a {
   color: #fff;
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 1000px) {
   .hero {
     height: auto;
-  }
-  .grid {
-    --auto-grid-min-size: 20rem;
   }
   .contact-box {
     display: none;
