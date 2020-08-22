@@ -32,7 +32,7 @@ a {
 .hero {
   background: #dddddd;
   margin: 0;
-  padding: 1em 1em 3em;
+  padding: 1em 5em 3em;
 }
 
 .hero .logo img {
@@ -177,6 +177,15 @@ a {
   letter-spacing: 0.2em;
 }
 
+.solid-line {
+  border-left: 7px solid black;
+  height: 62em;
+  position: absolute;
+  left: 97%;
+  margin-left: -3px;
+  top: 86%;
+}
+
 footer {
   background: #ad2126;
   color: #fff;
@@ -206,6 +215,9 @@ footer a {
 @media only screen and (max-width: 1180px) {
   .hero {
     height: auto;
+  }
+  .solid-line {
+    display: none;
   }
   .contact-box {
     display: none;

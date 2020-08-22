@@ -29,7 +29,7 @@ a {
 .hero {
   background: #dddddd;
   margin: 0;
-  padding: 1em 1em 3em;
+  padding: 1em 5em 3em;
   .logo {
     img {
       width: 22em;
@@ -153,6 +153,15 @@ a {
   }
 }
 
+.solid-line {
+  border-left: 7px solid rgb(0, 0, 0);
+  height: 62em;
+  position: absolute;
+  left: 97%;
+  margin-left: -3px;
+  top: 86%;
+} 
+
 footer {
   background: #ad2126;
   color: #fff;
@@ -174,6 +183,10 @@ footer {
 @media only screen and (max-width: 1180px) {
   .hero {
     height: auto;
+  }
+
+  .solid-line {
+    display:none;
   }
 
   .contact-box {
