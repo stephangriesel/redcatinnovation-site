@@ -13,8 +13,8 @@
 
 body,
 html {
-  background: #ad2126;
-  box-sizing: border-box;
+  // background: #ad2126;
+  // box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Molde-Condensed-Medium';
@@ -29,10 +29,10 @@ a {
 .hero {
   background: #dddddd;
   margin: 0;
-  padding: 1em 5em 3em;
+  width:100%;
   .logo {
     img {
-      width: 22em;
+      width: 30em;
     }
   }
 }
@@ -44,10 +44,6 @@ a {
   // -webkit-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25); // will show if box layout used
   // -moz-box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25); // will show if box layout used
   // box-shadow: 0px 0px 54px 13px rgba(0, 0, 0, 0.25); // will show if box layout used
-}
-
-.hero {
-  // height: 100vh;
 }
 
 .top {
@@ -62,34 +58,32 @@ a {
 .logo {
   display: grid;
   place-items: center;
-  height: 70vh;
+  margin:10em 0.5em 5em;
+}
+
+.desc-main {
+  margin:2em 0em 10em;
+  text-align: center;
+  p {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin:0;
+    letter-spacing: 0.1em;
+  }
 }
 
 .desc {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: flex-end;
   p {
     margin: 0;
     padding: 0;
-  }
-  .desc-left {
-    color: #000;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-size: 2em;
-    p {
-      margin: 0;
-      padding: 0;
-      line-height: 1em;
-      letter-spacing: 0.1em;
-    }
   }
   .desc-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    margin: 2em 5em;
     p {
       line-height: 1em;
       font-size: 2em;
@@ -162,6 +156,23 @@ a {
   top: 86%;
 } 
 
+.top-left {
+  img {
+    width:29em;
+    position: absolute;
+    left:4%;
+    top:-5%;
+  }
+}
+.top-left-lines {
+  img {
+    width:33em;
+    position: absolute;
+    left:3%;
+    top:-5%;
+  }
+}
+
 footer {
   background: #ad2126;
   color: #fff;
@@ -181,8 +192,45 @@ footer {
 }
 
 @media only screen and (max-width: 1180px) {
+
   .hero {
-    height: auto;
+    height:auto;
+    .logo {
+      img {
+        width: 20em;
+      }
+    }
+  }
+
+  .logo {
+    display: grid;
+    place-items: center;
+    margin:10em 0.5em 0em;
+  }
+
+  .top {
+    p {
+      z-index:2;
+      background:rgba(255, 255, 255, 0.5)
+    }
+  }
+
+  .top-left {
+    img {
+      width:15em;
+      position: absolute;
+      left:4%;
+      z-index:0;
+    }
+  }
+  .top-left-lines {
+    img {
+      width:17em;
+      position: absolute;
+      left:3%;
+      top:-5%;
+      z-index: 1;
+    }
   }
 
   .solid-line {

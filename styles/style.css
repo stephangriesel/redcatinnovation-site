@@ -15,9 +15,6 @@
 
 body,
 html {
-  background: #ad2126;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Molde-Condensed-Medium';
@@ -32,11 +29,11 @@ a {
 .hero {
   background: #dddddd;
   margin: 0;
-  padding: 1em 5em 3em;
+  width: 100%;
 }
 
 .hero .logo img {
-  width: 22em;
+  width: 30em;
 }
 
 .wrapper {
@@ -62,40 +59,33 @@ a {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  height: 70vh;
+  margin: 10em 0.5em 5em;
+}
+
+.desc-main {
+  margin: 2em 0em 10em;
+  text-align: center;
+}
+
+.desc-main p {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.1em;
 }
 
 .desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .desc p {
   margin: 0;
   padding: 0;
-}
-
-.desc .desc-left {
-  color: #000;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
-.desc .desc-left p {
-  margin: 0;
-  padding: 0;
-  line-height: 1em;
-  letter-spacing: 0.1em;
 }
 
 .desc .desc-right {
@@ -109,9 +99,7 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  margin: 2em 5em;
 }
 
 .desc .desc-right p {
@@ -186,6 +174,20 @@ a {
   top: 86%;
 }
 
+.top-left img {
+  width: 29em;
+  position: absolute;
+  left: 4%;
+  top: -5%;
+}
+
+.top-left-lines img {
+  width: 33em;
+  position: absolute;
+  left: 3%;
+  top: -5%;
+}
+
 footer {
   background: #ad2126;
   color: #fff;
@@ -215,6 +217,32 @@ footer a {
 @media only screen and (max-width: 1180px) {
   .hero {
     height: auto;
+  }
+  .hero .logo img {
+    width: 20em;
+  }
+  .logo {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin: 10em 0.5em 0em;
+  }
+  .top p {
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .top-left img {
+    width: 15em;
+    position: absolute;
+    left: 4%;
+    z-index: 0;
+  }
+  .top-left-lines img {
+    width: 17em;
+    position: absolute;
+    left: 3%;
+    top: -5%;
+    z-index: 1;
   }
   .solid-line {
     display: none;
